@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kumbh Sans, sans-serif;
+}
+
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #b068e9, #6463e7);
+    padding: 40px 0 85px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.women {
+    position: absolute;
+    width: 237px;
+    height: 180px;
+}
+
+.shadow {
+    position: absolute;
+    margin-top: 108px;
+    width: 237px;
+    height: 108px;
+}
+
+
+.faq {
+    text-align: center;
+    width: 327px;
+    height: 535px;
+    background-color: #fff;
+    padding: 132px 24px 48px 25px;
+    border-radius: 23px;
+    margin-top: 107px;
+    box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.q-a {
+    display: flex;
+    flex-direction: row;
+    
+    margin: auto;
+   
+}
+
+.question{
+    font-size: 13px;
+    color: #4b4c5f;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    text-align: left;
+}
+
+.answer {
+    /* display: none; */
+    font-size: 12px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 12px 0 16px;
+    color: #787887;
+    text-align: left;
+}
+
+
+.question:hover {
+    color: #f47b56;
+}
+
+.q-a img {
+    width: 10px;
+    height: 8px;
+    margin: auto;
+    margin-right: 0;
+  }
+
+  
+    .arrow {
+        margin-left: 20px;
+    }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8ea;
+    margin: 16px 0 19px;
+  }
+
+  .desktop-illustration {
+    display: none;
+  }
+
+
+  @media screen and (min-width: 1440px){
+/* .faq {
+    position: relative;
+} */
+/* .img {
+    position: relative;
+    
+} */
+
+    .desktop {
+        display: flex;
+        /* position: relative; */
+    }
+        
+    
+    .mobile {
+        display: none;
+    }
+
+    
+
+    .desktop-illustration {
+        display: flex;
+        position: absolute;
+        margin-left: -925px;
+        margin-top: 300px;
+        overflow: visible;
+    }
+
+
+    .container {
+        overflow: hidden;
+    }
+
+    .main {    
+        flex-direction: row;
+    }
+
+    .faq {
+        width: 920px;
+        height: 509px;
+    }
+
+
+    .desktop-shadow {
+        display: flex;
+        position: absolute;
+        margin-top: -500px;
+        height: auto;
+        width: auto;
+        margin-left: -580px;
+    }
+ 
+    .desktop-women {
+        display: flex;
+        position: absolute;
+        margin: 70px 0 80px;
+        margin-left: -85px;
+        margin-top: -100px;
+    }
+
+ 
+    .q-a, .line {
+        margin-left: 475px;
+        width: 350px;
+    }
+
+
+    h1 {
+        margin-top: -15px;
+        margin-left: 130px;
+    }
+
+    .answer {
+        width: 35%;
+        margin: 12px 476px 16px;
+        color: #787887;
+        text-align: left;
+    }
+  }
