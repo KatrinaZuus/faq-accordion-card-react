@@ -48,7 +48,7 @@ console.log(answer)
                     
                     <img className="arrow" src={item.arrow} alt="" style = {question == index && answer ? {transform: "rotate(180deg)"} : {transform : "rotate(0deg)"}}></img>
                 </div>
-                    <p className="answer" style = {question == index && answer ? {display:"flex"} : {display: "none"}} >{item.answer}</p>
+                    <p className="answer" style = {question == index/*item.id-1*/ && answer ? {display:"flex"} : {display: "none"}} >{item.answer}</p>
                     
                     <div className="line"></div>
             </div>
